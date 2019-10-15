@@ -21,8 +21,8 @@
 window.onload = function () {
   var mapOptions = {
     center: new google.maps.LatLng(21, 78),
-    zoom: 5,
-    maxZoom: 6
+    zoom: 10,
+    maxZoom: 10
   };
 
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -38,8 +38,8 @@ window.onload = function () {
   var layerOptions = {
     alt: 'MODIS_Terra_Aerosol',
     getTileUrl: getTileUrl,
-    maxZoom: 6,
-    minZoom: 1,
+    maxZoom: 10,
+    minZoom: 10,
     name: 'MODIS_Terra_Aerosol',
     tileSize: new google.maps.Size(256, 256),
     opacity: 0.5
